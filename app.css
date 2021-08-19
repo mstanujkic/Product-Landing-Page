@@ -1,0 +1,635 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400|Philosopher:400,700");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: black;
+  font-family: "Muli", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+section#products, #aboutus{
+  padding: 2.8em 2em 0;
+}
+
+h4{
+  letter-spacing: 1px;
+  padding-top: 10px;
+}
+
+h3{
+  font-weight: 700;
+}
+
+ul{
+  list-style: none;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+  padding-bottom: 1em;
+}
+
+.title.title-right{
+  justify-content: flex-end;
+}
+
+.line{
+  width: 3em;
+  height: 1px;
+  background-color: #000;
+  margin-right: 1em;
+}
+
+.line.line-right{
+  order: 2;
+  margin-right: 0;
+  margin-left: 1em;
+}
+
+.btn{
+  display: inline-block;
+  padding: .5em 1.5em;
+  border: solid 1px #090b08;
+  transition: all .3s ease-in;
+}
+
+.btn:hover, .btn:focus{
+  transform: translate(0px, -2px);
+  -webkit-box-shadow: 0px 10px 7px -9px rgba(255, 206, 198, 0.75);
+  -moz-box-shadow: 0px 10px 7px -9px rgba(255, 206, 198, 0.75);
+  box-shadow: 0px 10px 7px -9px rgba(255, 206, 198, 0.75);
+  transition: all .3s ease-out;
+}
+
+.myColor{
+  background-color: #ffa3a3e7;
+}
+
+/* Header */
+.navbar-nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+a.nav-link{
+  margin-right: 0;
+}
+
+a.nav-link:hover,
+a.nav-link:active,
+a.nav-link:focus{
+  border-bottom: solid 1.4px #000;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border: 0;
+  font-size: 20px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.navbar:hover {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navbar.scrolled {
+  background: #ffa3a3e7;
+  transition: background 500ms;
+}
+
+/* First Page */
+.firstPage{
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(https://foreveramber.co.uk/wp-content/uploads/2019/09/best-yankee-candle-scents-1200x675.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+}
+
+.container {
+  position: absolute;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  line-height: 1.4em;
+}
+
+/* Home Page */
+#home, #aboutus{
+  background-color: #FFE3DA;
+}
+
+section#home{
+  padding: 0;
+}
+
+ #homeDiv{
+  padding: 2.7em 7em 0;
+}
+
+.homePage{
+ position: relative;
+ background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(https://d1k571r5p7i4n1.cloudfront.net/3fe155c630baacd351d1ab67848df15a/large/Yankee_Candle.jpg);
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size:cover;
+ background-attachment: fixed;
+ height: 100vh;
+ text-align: center;
+ color: #fff;
+ width: 100%;
+}
+
+.scnd-container{
+ position: absolute;
+ width: 90%;
+ top: 50%;
+ left: 50%;
+ -webkit-transform: translate(-50%, -50%);
+ transform: translate(-50%, -50%);
+ line-height: 1.4em;
+}
+
+/* Product section */
+section#products{
+  padding-bottom: 2.8em;
+}
+
+.box{
+  display: block;
+  position: relative;
+  background-color: #fce1e2ee;
+  text-align: center;
+  margin-bottom: 2em;
+  height: auto;
+  flex: 3 0 30%;
+  margin-right: 1em;
+  padding-top: .9em;
+  padding-bottom: .5em;
+}
+
+.box-overlay {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+	border: solid 3px #FFA3A3;
+	transform: translate(13px, 8px);
+  transition: all 1s ease;
+}
+
+.box:hover .box-overlay,
+.box:focus .box-overlay {
+  transform: translate(0px, 0px) scale(0.92, 0.87);
+}
+
+.box img {
+  width: 300px;
+  height: auto;
+}
+
+#products .wrapper{
+  margin: 0 4em;
+}
+
+#products .wrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrapper, a:link, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+/* About Section */
+#aboutus{
+  text-align: justify;
+}
+
+section#aboutus{
+  padding-bottom: 3.8em;
+}
+
+#aboutus .text{
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 2em;
+}
+
+#aboutus .text p{
+  padding-bottom: 0;
+}
+
+.video-wrapper{
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  overflow: hidden;
+  height: 0;
+}
+
+.video-wrapper iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Contact */
+#products, #firstPage, footer{
+  background-color: #FFD7C8;
+}
+
+footer {
+	display: flex;
+	flex-wrap: wrap;
+	color: #000000;
+	justify-content: space-between;
+}
+
+footer .copyright i {
+  color: red;
+}
+
+.copyright{
+  margin-bottom: 3vh;
+}
+
+.bottom{
+  text-align: center;
+  font-size: 15px;
+}
+
+.contact, .bottom, #contacts{
+	width: 100%;
+}
+
+.contact, #contacts {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+  padding: 20px 20px 0 20px;
+}
+
+.contact p,
+.contact button {
+	font-size: 1rem;
+	font-weight: 600;
+	letter-spacing: 0.05rem;
+}
+
+.contact p {
+	margin-bottom: 20px;
+}
+
+.contact form,
+.contact .social-media {
+	flex: 1 400px;
+	margin-bottom: 40px;
+}
+
+.contact input[type="email"] {
+	width: 250px;
+	height: 40px;
+	font-size: 1rem;
+	text-indent: 5px;
+	box-shadow: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #FFE3DA;
+
+  -webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+}
+
+.contact button {
+	width: 110px;
+	height: 40px;
+	font-size: 0.9rem;
+  font-weight: 500;
+	background-color: #ffa3a3e7;
+	color: black;
+	transition: all 0.3s ease;
+	border: 1px solid black;
+	outline: none;
+	box-shadow: none;
+	border-radius: 5px;
+	position: relative;
+	z-index: 1;
+}
+
+.contact button span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 2px;
+	background: #00A7CA;
+	height: 100%;
+	z-index: -1;
+}
+
+.contact button:hover {
+  background-color: #F590A5;
+  transition: all .25s ease;
+	cursor: pointer;
+}
+
+/* Responsive Style */
+@media(min-width: 320px){
+
+  h1{
+    font-size: 1.7em;
+    padding-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 1.50rem;
+  }
+
+  p {
+    font-size: .9em;
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+ #homeDiv{
+  padding: 2.8em 2em 0;
+  }
+
+ .btn{
+  font-size: .8rem;
+  }
+
+  .wrapper h4{
+  font-size: 1.3rem;
+  }
+
+  #products .wrapper{
+    margin: 0;
+  }
+
+  .box img {
+    width: 200px;
+    height: auto;
+  }
+
+  .contact button {
+     margin-top: 10px;
+  }
+
+  .contact .social-media i {
+    font-size: 2rem;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+  }
+
+  .contact .social-media i:hover {
+    color: #ffa3a3e7;
+    cursor: pointer;
+  }
+
+  .bottom .bottom-sm i {
+    font-size: 1.3rem;
+    padding: 10px 5px;
+    transition: all 0.3s ease;
+  }
+
+  .bottom .bottom-sm i:hover {
+    color: #ffa3a3e7;
+    cursor: pointer;
+  }
+
+  .bottom p:first-of-type {
+    float: left;
+  }
+
+  .bottom p:last-of-type {
+    float: right;
+  }
+
+  .bottom hr {
+    clear: both;
+    width: 60%;
+    margin: 10px auto;
+    border-top: 1px solid #000;
+  }
+
+}
+
+@media(min-width: 576px){
+
+  h1{
+    font-size: 1.9em;
+  }
+
+  h3 {
+    font-size: 1.50rem;
+  }
+
+  p {
+  font-size: 1em;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  text-align: center;
+  }
+
+  .btn{
+  font-size: 1rem;
+ }
+
+  #products .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .box{
+    flex: 3 0 30%;
+    margin-right: .5em;
+  }
+
+  .box img {
+    width: 300px;
+    height: auto;
+  }
+
+  .video-wrapper{
+    margin: 0 2em;
+  }
+}
+
+@media(min-width: 768px){
+
+  .wrapper{
+    display: flex;
+  }
+
+  h1{
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.50rem;
+  }
+
+  p {
+  font-size: 0.9em;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  text-align: center;
+  }
+
+  .btn{
+  font-size: 0.9rem;
+  }
+
+  a.nav-link{
+    margin-right: 1em;
+  }
+
+  .box{
+    flex: 3 0 30%;
+    margin-right: 1.6em;
+  }
+
+  #aboutus .wrapper{
+    display: block;
+  }
+  #aboutus .text{
+    margin-right: 4em;
+  }
+  .video-wrapper{
+    margin: auto 4em;
+  }
+
+  #aboutus p{
+    text-align: justify;
+  }
+
+  .bottom p:first-of-type,
+	.bottom p:last-of-type {
+		float: initial;
+	}
+
+  .bottom > span,
+  .bottom > a {
+	font-size: 0.8rem;
+	margin-right: 20px;
+  }
+
+}
+
+@media(min-width: 992px){
+
+  section#products, #aboutus{
+    padding: 3.8em 7em 0;
+  }
+
+  .title.title-left{
+    margin-left: -2.5em;
+  }
+
+  .title.title-right{
+    margin-right: -2.5em;
+  }
+
+  .line{
+    width: 5.5em;
+  }
+
+  #homeDiv {
+      padding: 2.8em 7em 0;
+    }
+
+  #aboutus .wrapper{
+    display: flex;
+  }
+
+  #aboutus .text{
+    flex: 1 0 40%;
+    margin-right: 1em;
+    padding-bottom: 0;
+  }
+
+  .video-wrapper{
+    flex: 2 0 60%;
+    padding-bottom: 33.25%;
+    align-self: center;
+    margin: 1.4em 3em;
+  }
+}
+
+@media(min-width: 1200px){
+
+  h1{
+    font-size: 2.4em;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  .firstPage p{
+    font-size: 1.2em;
+  }
+
+  .homePage p{
+    font-size: 1.2em;
+  }
+
+  section#products, #aboutus{
+    padding: 2.8em 9em 0;
+  }
+
+  a.nav-link{
+    margin-right: .7em;
+  }
+
+  #homeDiv{
+    padding: 2.7 9em 0;
+   }
+
+  #aboutus .text{
+    padding-right: 3em;
+    padding-bottom: 0;
+  }
+
+  .video-wrapper{
+    flex: 2 0 60%;
+    margin: 0;
+  }
+
+  .btn{
+    font-size: 1rem;
+  }
+}
